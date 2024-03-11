@@ -29,8 +29,10 @@ body {
 }
 
 .section2 {
-    height: 97vh;
+    max-height: 97vmin;
     width: 75.3vw;
+    background-color:#1d1d1d;
+    overflow: auto;
 }
 
 .navsectioninS1 {
@@ -58,6 +60,9 @@ body {
     img {
         height: 22px;
     }
+}
+.logoinNavsection1 img:hover{
+    cursor: pointer;
 }
 
 .homeandsearchinNavsection1 {
@@ -92,7 +97,8 @@ body {
     width: 23vw;
     display: flex;
     align-items: center;
-    gap: 133px;
+ justify-content: space-between;
+    position: sticky;
 
     a img {
         height: 22px;
@@ -102,7 +108,6 @@ body {
 
 .yourlibrary {
     margin: 20px;
-    gap: 13px;
     font-size: 11px;
 
     a {
@@ -115,6 +120,7 @@ body {
 
 .plussign {
     display: flex;
+    margin: 20px;
     align-items: center;
     justify-content: center;
     height: 29px;
@@ -187,7 +193,7 @@ body {
 }
 
 .buttondesign button:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     cursor: pointer;
 }
 
@@ -228,6 +234,133 @@ body {
 
 .languagebutton button:hover {
     border: 1px solid white;
-    transform: scale(1.1);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.header {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    background-color: #121212;
+}
+
+.loginorsignupbutton {
+    display: flex;
+    margin: 15px;
+}
+
+.signup button{
+    font-weight: 700;
+    background-color: transparent;
+    height: 42px;
+    width: 90px;
+    border-radius: 38px;
+    border: none;
+    font-size: 11px;
+    color: white;
+    filter: brightness(0.6);
+}
+
+.login button{ 
+    font-weight: 700;
+    height: 42px;
+    width: 90px;
+    border-radius: 38px;
+    border: none;
+    font-size: 11px;
+    background-color: white;
+}
+
+.arrowimageinheader {
+    display: flex;
+    margin: 20px;
+}
+
+.arrowimageinheader img{
+    height: 17px;
+}
+
+
+.arrowimageinheader div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 36px;
+    background-color: rgb(10, 10, 10);
+}
+
+.marginonarrow {
+    margin: 5px;
+}
+
+.marginonarrow:hover {
+    transform: scale(1.03);
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+}
+
+.login button:hover {
+    transform: scale(1.04);
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+.signup button:hover {
+    transform: scale(1.04);
+    filter: brightness(1);
+    cursor: pointer;
+}
+
+
+.foldersection1heading{
+    h1 {
+        margin-top: 20px;
+        margin-left: 33px;
+        font-size: 20px;
+    }
+}
+.folderdesign {
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    width: 168px;
+    background-color:#131313;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin: 0px 0px 19px 27px;
+}
+
+.folderdesign:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.imagedesigninfolder {
+    img {
+        border-radius: 7px;
+        height: 149px;
+    }
+}
+
+.infodesign {
+    width: 149px;
+    h2 {
+        font-size: 13px;
+    }
+    p {
+        font-size: 11px;
+    }
+}
+
+.folders {
+    display: flex;
+    flex-wrap: wrap;
 }
 
